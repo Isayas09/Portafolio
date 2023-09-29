@@ -1,0 +1,136 @@
+/* Estilo para el encabezado */
+header.encabezado {
+    color: #fff; /* Texto blanco */
+    padding: 20px; /* Espacio alrededor del texto */
+    text-align: center; /* Centra el texto horizontalmente */
+    font-size: 24px; /* Tamaño de fuente más grande */
+    transition: background-color 0.3s; /* Transición suave del color de fondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+   
+}
+
+
+#exit{
+    padding: 0;
+    margin-right: 89%;
+   
+}
+
+/* Efecto de cambio de color al pasar el cursor */
+header.encabezado:hover {
+    background-color: #0056b3; /* Nuevo color de fondo al pasar el cursor */
+}
+
+
+/* Estilo para el cuerpo de la página */
+body {
+    /* Establece la imagen de fondo y su configuración */
+    background-image: url("/Imagenes/Fondo.jpeg"); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el cuerpo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+    /* Establece el gradiente superpuesto */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), /* Gradiente negro semi-transparente */
+                url("/Imagenes/Fondo.jpeg"); /* Ruta de la imagen de fondo */
+
+    /* Configuración adicional para el cuerpo */
+    font-family: Arial, sans-serif; /* Cambia la fuente de texto según tu preferencia */
+    margin: 0; /* Elimina el margen predeterminado del cuerpo */
+    padding: 0; /* Elimina el espacio de relleno predeterminado del cuerpo */
+}
+
+/* Estilo para el contenedor de las tarjetas */
+.contenedor-tarjetas {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea */
+    justify-content: space-between; /* Distribuye las tarjetas horizontalmente con espacio entre ellas */
+    max-width: 1000px; /* Limita el ancho del contenedor */
+    margin: 20px auto; /* Centra el contenedor horizontalmente y agrega espacio en la parte superior */
+}
+
+/* Estilo para cada tarjeta */
+.tarjeta {
+    background-color: #fff; /* Fondo blanco */
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px 0; /* Espacio vertical entre las tarjetas */
+    width: calc(40% - 20px); /* Aproximadamente el 40% del ancho total con margen */
+    padding: 20px;
+}
+
+/* Estilo para las imágenes dentro de las tarjetas */
+.imagen-tarjeta img {
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Estilo para los títulos de las tarjetas */
+h2 {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #333; /* Color de texto más oscuro */
+}
+
+/* Estilo para los párrafos de descripción */
+p {
+    color: #555; /* Color de texto un poco más oscuro */
+    line-height: 1.5; /* Espaciado de línea aumentado para una mejor legibilidad */
+}
+
+/* Estilo para los botones "Leer más" y "Leer menos" */
+.boton-leer-mas,
+.boton-leer-menos {
+    font-size: x-large;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #007BFF; /* Fondo azul */
+    color: #fff; /* Texto blanco */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espacio alrededor del texto */
+    width: 100%; /* Ancho del 100% para cubrir la tarjeta */
+    display: block; /* Hacer que los botones ocupen todo el ancho */
+    margin-top: 10px; /* Espacio superior entre los botones */
+    cursor: pointer; /* Cambiar el cursor al pasar el ratón */
+    border-radius: 5px; /* Esquinas redondeadas */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+/* Estilo para los botones "Leer más" y "Leer menos" al pasar el ratón */
+.boton-leer-mas:hover,
+.boton-leer-menos:hover {
+    background-color: #0056b3; /* Color de fondo más oscuro al pasar el ratón */
+}
+
+#footerr{
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ccc;
+    background-color: #333;
+    text-align: center;
+    height: 60px;
+}
+
+
+.neon-text {
+    font-size: 25px;
+    color: #808080; /* Color gris */
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Arial', sans-serif;
+    animation: neon 2s linear infinite;
+}
+
+@keyframes neon {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+    }
+    50% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #fff, 0 0 25px #fff;
+    }
+    100% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
+    }
+}
+
